@@ -8,7 +8,7 @@ const UserProvider = ({ children }) => {
     });
 
     const handleInputChange = (e) => {
-        setUser({ ...setUser, [e.target.name]: e.target.value })
+        setUser({ ...setUser, [e.target.name]:   e.target.value })
 
     }
     return (
