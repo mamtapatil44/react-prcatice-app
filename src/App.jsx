@@ -6,6 +6,7 @@ import UserProvider from './contexts/user.provider';
 import UserFormProvider from './contexts/userform.provider';
 import Registration from './components/Registration';
 import Parent from './components/Parent';
+import SharedProvider, { ComponentOne, ComponentTwo } from './components/SharedConponent';
 
 const App = () => {
   const[count,setCount] = useState(0)
@@ -26,6 +27,12 @@ const App = () => {
    <button className='bg-blue-600 m-2 p-2' onClick={handleOnclick}>Click me</button>
 
    <Parent/>
+<SharedProvider>
+  <ComponentOne/>
+  <ComponentTwo/>
+</SharedProvider>
+
+
   </div>
  
   )
