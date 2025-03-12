@@ -8,6 +8,7 @@ import Registration from './components/Registration';
 import Parent from './components/Parent';
 import SharedProvider, { ComponentOne, ComponentTwo } from './components/SharedConponent';
 import NestProvider, { NextParent } from './components/Netsed';
+import LiftState from './components/LiftState';
 
 const App = () => {
   const[count,setCount] = useState(0)
@@ -38,7 +39,7 @@ const App = () => {
 <NextParent/>
 </NestProvider>
 
-
+<LiftState/>
   </div>
  
   )
