@@ -5,6 +5,7 @@ import UserContext from './contexts/user.context';
 import UserProvider from './contexts/user.provider';
 import UserFormProvider from './contexts/userform.provider';
 import Registration from './components/Registration';
+import Parent from './components/Parent';
 
 const App = () => {
   const[count,setCount] = useState(0)
@@ -23,8 +24,10 @@ const App = () => {
   <div className='conatiner mx-auto bg-amber-700'>
    <p>Count:{count}</p>
    <button className='bg-blue-600 m-2 p-2' onClick={handleOnclick}>Click me</button>
+
+   <Parent/>
   </div>
-   
+ 
   )
 }
 
