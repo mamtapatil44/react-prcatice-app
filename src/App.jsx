@@ -7,6 +7,7 @@ import UserFormProvider from './contexts/userform.provider';
 import Registration from './components/Registration';
 import Parent from './components/Parent';
 import SharedProvider, { ComponentOne, ComponentTwo } from './components/SharedConponent';
+import NestProvider, { NextParent } from './components/Netsed';
 
 const App = () => {
   const[count,setCount] = useState(0)
@@ -31,6 +32,11 @@ const App = () => {
   <ComponentOne/>
   <ComponentTwo/>
 </SharedProvider>
+
+
+<NestProvider>
+<NextParent/>
+</NestProvider>
 
 
   </div>
