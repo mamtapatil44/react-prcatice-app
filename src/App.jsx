@@ -9,6 +9,7 @@ import Parent from './components/Parent';
 import SharedProvider, { ComponentOne, ComponentTwo } from './components/SharedConponent';
 import NestProvider, { NextParent } from './components/Netsed';
 import LiftState from './components/LiftState';
+import MultipleProvider, { MultChild } from './components/ContextState';
 
 const App = () => {
   const[count,setCount] = useState(0)
@@ -40,6 +41,10 @@ const App = () => {
 </NestProvider>
 
 <LiftState/>
+
+<MultipleProvider>
+  <MultChild/>
+</MultipleProvider>
   </div>
  
   )
