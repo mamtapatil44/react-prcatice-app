@@ -10,6 +10,9 @@ import SharedProvider, { ComponentOne, ComponentTwo } from './components/SharedC
 import NestProvider, { NextParent } from './components/Netsed';
 import LiftState from './components/LiftState';
 import MultipleProvider, { MultChild } from './components/ContextState';
+import { Provider } from 'react-redux';
+import store from './utils/Store';
+import UserList from './components/UserList';
 
 const App = () => {
   const[count,setCount] = useState(0)
@@ -25,6 +28,7 @@ const App = () => {
   // <UserFormProvider>
   //   <Registration/>
   // </UserFormProvider>
+  <Provider store={store}>
   <div className='conatiner mx-auto bg-amber-700'>
    <p>Count:{count}</p>
    <button className='bg-blue-600 m-2 p-2' onClick={handleOnclick}>Click me</button>
@@ -45,8 +49,10 @@ const App = () => {
 <MultipleProvider>
   <MultChild/>
 </MultipleProvider>
+
+<UserList/>
   </div>
- 
+  </Provider>
   )
 }
 
