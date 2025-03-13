@@ -14,6 +14,7 @@ import { Provider } from 'react-redux';
 import store from './utils/Store';
 import UserList from './components/UserList';
 import PostFn from './components/PostFn';
+import PostCls from './components/PostCls';
 
 const App = () => {
   const[count,setCount] = useState(0)
@@ -54,6 +55,7 @@ const App = () => {
 <UserList/>
 
 <PostFn/>
+<PostCls/>
   </div>
   </Provider>
   )
