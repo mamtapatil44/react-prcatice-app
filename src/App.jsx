@@ -18,6 +18,7 @@ import UserList from "./components/UserList";
 import PostFn from "./components/PostFn";
 import PostCls from "./components/PostCls";
 import MemoParentFn from "./components/MemoParentFn";
+import MemoParentCls from "./components/MemoParentCls";
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -60,6 +61,7 @@ const App = () => {
         <PostFn />
         <PostCls />
         <MemoParentFn />
+        <MemoParentCls/>
       </div>
     </Provider>
   );
