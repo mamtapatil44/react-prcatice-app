@@ -13,6 +13,7 @@ import MultipleProvider, { MultChild } from './components/ContextState';
 import { Provider } from 'react-redux';
 import store from './utils/Store';
 import UserList from './components/UserList';
+import PostFn from './components/PostFn';
 
 const App = () => {
   const[count,setCount] = useState(0)
@@ -51,6 +52,8 @@ const App = () => {
 </MultipleProvider>
 
 <UserList/>
+
+<PostFn/>
   </div>
   </Provider>
   )
